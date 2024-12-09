@@ -51,59 +51,59 @@ endif()
 
 # Checks.
 # If you add a check, also add it to ClangTidyForceLinker.h in this directory.
-add_subdirectory(android)
-add_subdirectory(abseil)
-add_subdirectory(altera)
-add_subdirectory(boost)
-add_subdirectory(bugprone)
-add_subdirectory(cert)
-add_subdirectory(concurrency)
-add_subdirectory(cppcoreguidelines)
-add_subdirectory(darwin)
-add_subdirectory(fuchsia)
-add_subdirectory(google)
-add_subdirectory(hicpp)
-add_subdirectory(linuxkernel)
-add_subdirectory(llvm)
-add_subdirectory(llvmlibc)
-add_subdirectory(misc)
-add_subdirectory(modernize)
-if(CLANG_TIDY_ENABLE_STATIC_ANALYZER)
-  add_subdirectory(mpi)
-endif()
-add_subdirectory(objc)
-add_subdirectory(openmp)
-add_subdirectory(performance)
-add_subdirectory(portability)
+#add_subdirectory(android)
+#add_subdirectory(abseil)
+#add_subdirectory(altera)
+#add_subdirectory(boost)
+#add_subdirectory(bugprone)
+#add_subdirectory(cert)
+#add_subdirectory(concurrency)
+#add_subdirectory(cppcoreguidelines)
+#add_subdirectory(darwin)
+#add_subdirectory(fuchsia)
+#add_subdirectory(google)
+#add_subdirectory(hicpp)
+#add_subdirectory(linuxkernel)
+#add_subdirectory(llvm)
+#add_subdirectory(llvmlibc)
+#add_subdirectory(misc)
+#add_subdirectory(modernize)
+#if(CLANG_TIDY_ENABLE_STATIC_ANALYZER)
+#  add_subdirectory(mpi)
+#endif()
+#add_subdirectory(objc)
+#add_subdirectory(openmp)
+#add_subdirectory(performance)
+#add_subdirectory(portability)
 add_subdirectory(readability)
-add_subdirectory(zircon)
+#add_subdirectory(zircon)
 set(ALL_CLANG_TIDY_CHECKS
-  clangTidyAndroidModule
-  clangTidyAbseilModule
-  clangTidyAlteraModule
-  clangTidyBoostModule
-  clangTidyBugproneModule
-  clangTidyCERTModule
-  clangTidyConcurrencyModule
-  clangTidyCppCoreGuidelinesModule
-  clangTidyDarwinModule
-  clangTidyFuchsiaModule
-  clangTidyGoogleModule
-  clangTidyHICPPModule
-  clangTidyLinuxKernelModule
-  clangTidyLLVMModule
-  clangTidyLLVMLibcModule
-  clangTidyMiscModule
-  clangTidyModernizeModule
-  clangTidyObjCModule
-  clangTidyOpenMPModule
-  clangTidyPerformanceModule
-  clangTidyPortabilityModule
+#  clangTidyAndroidModule
+#  clangTidyAbseilModule
+#  clangTidyAlteraModule
+#  clangTidyBoostModule
+#  clangTidyBugproneModule
+#  clangTidyCERTModule
+#  clangTidyConcurrencyModule
+#  clangTidyCppCoreGuidelinesModule
+#  clangTidyDarwinModule
+#  clangTidyFuchsiaModule
+#  clangTidyGoogleModule
+#  clangTidyHICPPModule
+#  clangTidyLinuxKernelModule
+#  clangTidyLLVMModule
+#  clangTidyLLVMLibcModule
+#  clangTidyMiscModule
+#  clangTidyModernizeModule
+#  clangTidyObjCModule
+#  clangTidyOpenMPModule
+#  clangTidyPerformanceModule
+#  clangTidyPortabilityModule
   clangTidyReadabilityModule
-  clangTidyZirconModule
+#  clangTidyZirconModule
   )
 if(CLANG_TIDY_ENABLE_STATIC_ANALYZER)
-  list(APPEND ALL_CLANG_TIDY_CHECKS clangTidyMPIModule)
+  #list(APPEND ALL_CLANG_TIDY_CHECKS clangTidyMPIModule)
 endif()
 set(ALL_CLANG_TIDY_CHECKS ${ALL_CLANG_TIDY_CHECKS} PARENT_SCOPE)
 
